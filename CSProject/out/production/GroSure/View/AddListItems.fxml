@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddListItemsController">
+   <children>
+      <Label layoutX="124.0" layoutY="71.0" text="Select an Item:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="itemsComboBox" layoutX="244.0" layoutY="71.0" prefHeight="26.0" prefWidth="199.0" />
+      <Label layoutX="162.0" layoutY="116.0" text="Quantity:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantityTF" layoutX="245.0" layoutY="116.0" prefHeight="26.0" prefWidth="199.0" />
+      <Button fx:id="addItemBtn" layoutX="381.0" layoutY="253.0" mnemonicParsing="false" onAction="#addItemBtnAction" text="Add Item">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="136.0" layoutY="171.0" text="Active Discounts:" />
+      <Label fx:id="discountsLbl" layoutX="245.0" layoutY="171.0" />
+      <Label layoutX="150.0" layoutY="153.0" text="Price per item:" />
+      <Label fx:id="priceLbl" layoutX="244.0" layoutY="153.0" />
+   </children>
+</AnchorPane>

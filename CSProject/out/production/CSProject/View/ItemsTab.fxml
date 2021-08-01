@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" scaleZ="2.2E7" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutX="45.0" layoutY="45.0" prefHeight="443.0" prefWidth="474.0">
+         <content>
+            <TableView prefHeight="640.0" prefWidth="474.0">
+              <columns>
+                <TableColumn prefWidth="267.9999809265137" text="Name" />
+                <TableColumn prefWidth="206.4000244140625" text="Price" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="45.0" layoutY="13.0" text="Manage Items:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="534.0" layoutY="14.0" orientation="VERTICAL" prefHeight="554.0" prefWidth="30.0" />
+      <ComboBox layoutX="370.0" layoutY="14.0" prefWidth="150.0" promptText="Category" />
+      <Label layoutX="589.0" layoutY="29.0" text="Select an item to view more info" underline="true">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="563.0" layoutY="83.0" prefHeight="37.0" prefWidth="302.0" text="Last month, you spent $x on item.getname();..................................................................................................................................................." textOverrun="WORD_ELLIPSIS" wrapText="true" />
+      <Label layoutX="564.0" layoutY="138.0" text="Last bought on:" />
+      <Label layoutX="564.0" layoutY="168.0" text="Can be found at: Supermarket, supermarket supermarket" />
+   </children>
+</AnchorPane>

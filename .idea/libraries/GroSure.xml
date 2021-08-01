@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GroSure">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CSProject/out/artifacts/GroSure_jar/GroSure.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

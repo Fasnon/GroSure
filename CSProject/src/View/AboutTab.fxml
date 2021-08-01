@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AboutTabController">
+   <children>
+      <Label fx:id="aboutLbl" layoutX="93.0" layoutY="76.0" prefHeight="178.0" prefWidth="662.0" text="Originally created as a project for the CS3233 module, GroSure has become a tool for many people to help in their grocery shopping." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Nirmala UI" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="createLbl" alignment="CENTER_RIGHT" layoutX="162.0" layoutY="300.0" prefHeight="178.0" prefWidth="662.0" text="- Created by Tan Kai Xun Dave" textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font name="Nirmala UI" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentVerLbl" alignment="CENTER_RIGHT" layoutX="223.0" layoutY="501.0" prefHeight="50.0" prefWidth="662.0" text="Current version: v1.0, last updated 5/10/2020" textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font name="Nirmala UI" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="666.0" layoutY="18.0" text="Language:" />
+      <ComboBox fx:id="languageComboB" layoutX="735.0" layoutY="14.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

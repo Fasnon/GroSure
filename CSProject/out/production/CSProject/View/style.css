@@ -1,0 +1,45 @@
+.button{
+    -fx-background-color: #fa9452;
+    -fx-text-fill:#000000;
+}
+
+
+.button:hover{
+	-fx-background-color: #fab861;
+	-fx-text-fill:#2b1200;
+	-fx-border-color: #6b3301;
+}
+
+.button:disabled{
+    -fx-background-color: #d46015;
+	-fx-text-fill:#ffd2b5;
+	-fx-border-color: #000000;
+	-fx-border-width: 3px;
+}
+
+.spinner{
+    -fx-font-size: 17px;
+}
+
+.date-picker{
+    -fx-font-size: 24px;
+}
+
+.tab-pane .tab:selected{
+    -fx-background-color: #ffdd9e;
+}
+
+
+.tab-pane .tab:hover{
+    -fx-background-color: #ffe5a8;
+}
+
+.tab-pane .tab{
+    -fx-background-color: #fff7e6;
+}
+
+.tab-pane {
+    -fx-background-color: #ffeac4;
+}
+
+

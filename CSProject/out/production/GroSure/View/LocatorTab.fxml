@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LocatorTabController">
+   <children>
+      <WebView fx:id="webView" layoutX="-2.0" prefHeight="467.0" prefWidth="906.0" />
+      <RadioButton fx:id="fairpriceRB" layoutX="205.0" layoutY="479.0" mnemonicParsing="false" text="Fairprice" />
+      <RadioButton fx:id="coldstorageRB" layoutX="562.0" layoutY="479.0" mnemonicParsing="false" text="Cold Storage" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserTabController">
+   <children>
+      <Label layoutX="120.0" layoutY="78.0" text="Username: ">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLbl" layoutX="286.0" layoutY="78.0" text="Label">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Label>
+      <StackPane layoutX="582.0" layoutY="75.0" prefHeight="38.0" prefWidth="36.0">
+         <children>
+            <Button fx:id="editNameBtn" mnemonicParsing="false" onAction="#editNameBtnAction" prefHeight="34.0" prefWidth="34.0">
+               <graphic>
+                  <ImageView fx:id="imageView" blendMode="SRC_ATOP" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </StackPane>
+      <Button fx:id="deleteUserBtn" layoutX="120.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteUserBtnAction" text="Delete User from software">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+      </Button>
+      <TextField fx:id="newUserTF" layoutX="286.0" layoutY="134.0" prefHeight="32.0" prefWidth="251.0" visible="false">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="confirmEditBtn" layoutX="582.0" layoutY="134.0" mnemonicParsing="false" onAction="#confirmEditBtnAction" prefHeight="32.0" prefWidth="102.0" text="Confirm Change" visible="false" />
+      <Label layoutX="120.0" layoutY="195.0" text="Join Date:">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="joinDateLbl" layoutX="278.0" layoutY="195.0" text="Label">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

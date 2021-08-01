@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateItemController">
+   <children>
+      <Label layoutX="133.0" layoutY="32.0" text="Item Name:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="58.0" text="Quantity:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="itemNameTF" layoutX="235.0" layoutY="32.0" prefHeight="26.0" prefWidth="183.0" />
+      <TextField fx:id="quantityTF" layoutX="235.0" layoutY="61.0" prefHeight="26.0" prefWidth="183.0" />
+      <Label layoutX="174.0" layoutY="90.0" text="Price:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="priceTF" layoutX="235.0" layoutY="90.0" prefHeight="26.0" prefWidth="183.0" />
+      <Label layoutX="94.0" layoutY="187.0" text="Discounts/Offers">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="discountsOffersComboB" layoutX="238.0" layoutY="187.0" prefHeight="26.0" prefWidth="159.0" promptText="(select a type of offer)" />
+      <Label fx:id="originalPriceLbl" layoutX="112.0" layoutY="231.0" text="Original Price:" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="originalPriceTF" layoutX="234.0" layoutY="230.0" prefHeight="26.0" prefWidth="183.0" visible="false" />
+      <Label fx:id="buyXForYLbl" layoutX="212.0" layoutY="246.0" text="Buy           for $" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="requirementTF" layoutX="246.0" layoutY="243.0" prefHeight="19.0" prefWidth="31.0" visible="false" />
+      <TextField fx:id="newPriceTF" layoutX="313.0" layoutY="243.0" prefHeight="26.0" prefWidth="98.0" visible="false" />
+      <Button fx:id="createItemBtn" layoutX="398.0" layoutY="301.0" mnemonicParsing="false" onAction="#createItemBtnAction" text="Create Item!">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="110.0" layoutY="128.0" text="Item Category:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="itemCategoryComboB" layoutX="238.0" layoutY="130.0" prefHeight="26.0" prefWidth="159.0" promptText="Select a category" />
+   </children>
+</AnchorPane>

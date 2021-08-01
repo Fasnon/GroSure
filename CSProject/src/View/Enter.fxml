@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EnterController">
+   <children>
+      <Label layoutX="28.0" layoutY="28.0" text="Select user">
+         <font>
+            <Font name="Franklin Gothic Medium" size="24.0" />
+         </font></Label>
+      <Button fx:id="selectBtn" layoutX="266.0" layoutY="415.0" mnemonicParsing="false" onAction="#selectButtonAction" text="Select" />
+      <ScrollPane layoutX="28.0" layoutY="61.0" prefHeight="336.0" prefWidth="272.0">
+         <content>
+            <VBox prefHeight="404.0" prefWidth="253.0">
+               <children>
+                  <TableView fx:id="tableView" prefHeight="200.0" prefWidth="239.0">
+                    <columns>
+                      <TableColumn fx:id="userNameColumn" prefWidth="108.79998397827148" text="User" />
+                      <TableColumn fx:id="lastModColumn" minWidth="0.0" prefWidth="144.80006408691406" text="Last Action" />
+                    </columns>
+                  </TableView>
+                  <Label>
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addUserBtn" alignment="BASELINE_CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#addUserAction" prefWidth="69.0" text="Add User!" />
+               </children>
+            </VBox>
+         </content></ScrollPane>
+   </children>
+</AnchorPane>

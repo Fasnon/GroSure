@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TripsTabController">
+   <children>
+      <TableView fx:id="tripTable" layoutX="55.0" layoutY="51.0" prefHeight="374.0" prefWidth="455.0">
+        <columns>
+          <TableColumn fx:id="IDTableC" prefWidth="70.39999008178711" text="Trip ID" />
+          <TableColumn fx:id="nameTableC" prefWidth="142.40003967285156" text="Trip Name" />
+            <TableColumn fx:id="dateTableC" prefWidth="131.99993896484375" text="Trip Date" />
+            <TableColumn fx:id="priceTableC" prefWidth="111.199951171875" text="Trip Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="604.0" layoutY="12.0" text="Select a trip to view more info" underline="true">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="544.0" layoutY="24.0" orientation="VERTICAL" prefHeight="554.0" prefWidth="30.0" />
+      <Label layoutX="55.0" layoutY="23.0" text="Trips:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="listTable" layoutX="574.0" layoutY="82.0" prefHeight="200.0" prefWidth="273.0">
+        <columns>
+          <TableColumn fx:id="listIDTableC" prefWidth="64.00006103515625" text="List ID" />
+          <TableColumn fx:id="listNameTableC" prefWidth="99.99993896484375" text="List Name" />
+            <TableColumn fx:id="listPriceTableC" prefWidth="121.5999755859375" text="List Price" />
+        </columns>
+      </TableView>
+      <PieChart fx:id="pieChart" animated="false" labelsVisible="false" layoutX="591.0" layoutY="331.0" legendSide="RIGHT" prefHeight="188.0" prefWidth="274.0" />
+      <Button fx:id="newTripBtn" layoutX="56.0" layoutY="438.0" mnemonicParsing="false" onAction="#newTripBtnAction" text="New Trip" />
+      <Button fx:id="editTripBtn" layoutX="449.0" layoutY="438.0" mnemonicParsing="false" onAction="#editTripBtnAction" text="Edit Trip" />
+      <Label fx:id="dateLbl" layoutX="56.0" layoutY="475.0" text="Date:" visible="false" />
+      <DatePicker fx:id="datePicker" layoutX="102.0" layoutY="471.0" visible="false" />
+      <Label fx:id="newNameLbl" layoutX="56.0" layoutY="497.0" text="Name:" visible="false" />
+      <TextField fx:id="newNameTF" layoutX="102.0" layoutY="493.0" prefHeight="26.0" prefWidth="174.0" visible="false" />
+      <Button fx:id="saveChangesBtn" layoutX="420.0" layoutY="502.0" mnemonicParsing="false" onAction="#saveChangesBtnAction" text="Save Changes" visible="false" />
+      <Label fx:id="tripSelectedLbl" layoutX="585.0" layoutY="42.0" text="Current trip selected:" />
+      <Label fx:id="timeRemainingLbl" layoutX="585.0" layoutY="60.0" text="Time remaining for the trip:" />
+      <Label fx:id="timeLbl" layoutX="283.0" layoutY="475.0" text="Time (Optional):" visible="false">
+         <tooltip>
+            <Tooltip text="Input time in HH:MM format" />
+         </tooltip>
+      </Label>
+      <TextField fx:id="timeTF" layoutX="369.0" layoutY="470.0" prefHeight="26.0" prefWidth="133.0" visible="false" />
+      <Button fx:id="addListBtn" layoutX="863.0" layoutY="82.0" mnemonicParsing="false" onAction="#addListBtnAction" text="+" />
+      <Button fx:id="deleteListBtn" layoutX="861.0" layoutY="108.0" mnemonicParsing="false" onAction="#deleteListBtnAction" text="Del" />
+      <Label layoutX="569.0" layoutY="311.0" text="Price Breakdown:" />
+      <Label fx:id="totalPriceLbl" layoutX="740.0" layoutY="289.0" text="Total Price:" />
+      <Label fx:id="reminderLbl" layoutX="628.0" layoutY="366.0" text="Total Price is zero. Go add some Items!" />
+      <Label fx:id="detailsLbl" alignment="TOP_RIGHT" layoutX="696.0" layoutY="311.0" prefHeight="41.0" prefWidth="190.0" wrapText="true" />
+      <Label layoutX="632.0" layoutY="506.0" text="Mouse over an item to find out more" />
+      <Button fx:id="deleteTripBtn" layoutX="436.0" layoutY="23.0" mnemonicParsing="false" onAction="#deleteTripBtnAction" text="Delete Trip" />
+   </children>
+</AnchorPane>
